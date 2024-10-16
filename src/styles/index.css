@@ -40,6 +40,12 @@
   background-image: url("../assets/icons/sun.svg");
 }
 
+@media (max-width: 1124px) {
+  .album__item {
+    width: 100%;
+  }
+}
+
 .genres,
 .genres__title,
 .genres__list {
