@@ -1,0 +1,111 @@
+@media (max-width: 1124px) {
+    .album__item {
+      width: 100%;
+    }
+  }
+
+.albums {
+    margin-bottom: 10rem;
+  }
+  
+  .albums__title {
+    color: var(--color-grey-2);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-block: 3rem;
+  }
+  
+  .albums__list {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .album__item {
+    width: 500px;
+    max-width: 100%;
+    background-color: var(--color-grey-7);
+  
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    border-radius: 0.25rem;
+  
+    transition: width ease-in-out 0.7s;
+  }
+  
+  .album__item:hover {
+    background-color: var(--color-grey-6);
+  }
+  
+  .album__cover-container {
+    overflow: hidden;
+  }
+  
+  .album__cover {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.25rem 0.25rem 0rem 0rem;
+    background-position: center;
+  
+    object-fit: cover;
+    transition: transform ease-in-out 0.7s;
+  }
+  
+  .album__cover:hover {
+    transform: scale(1.1);
+  }
+  
+  .album__details {
+    padding-inline: 1rem;
+  }
+  
+  .album__band,
+  .album__year,
+  .album__genre {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-grey-3);
+  }
+  
+  .album__band,
+  .album__year {
+    padding-right: 1rem;
+  }
+  
+  .album__name {
+    color: var(--color-grey-2);
+    padding-inline: 1rem;
+    font-size: 1.375rem;
+    font-weight: 600;
+  }
+  
+  .album__price--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .album__price {
+    color: var(--color-grey-2, #212529);
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  .album__buy--button {
+    border: 1px solid var(--color-brand-2);
+    background-color: var(--color-brand-2);
+    padding: 0.65rem 0.7rem;
+    color: #fff;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 1.125rem;
+  }
+  
+  .album__buy--button:hover {
+    background-color: var(--color-brand-1);
+    border-color: var(--color-brand-1);
+  }
+  

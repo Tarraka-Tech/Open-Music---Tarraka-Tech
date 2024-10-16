@@ -1,0 +1,20 @@
+.price-range__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 2rem;
+  }
+  
+  .price-range__title {
+    padding-block: 1rem;
+    color: var(--color-grey-2);
+  }
+  
+  .price-range__value {
+    padding-block: 1rem;
+    color: var(--color-grey-3);
+  }
+  
+  .price-range__value--dynamic {
+    color: var(--color-brand-1);
+  }
