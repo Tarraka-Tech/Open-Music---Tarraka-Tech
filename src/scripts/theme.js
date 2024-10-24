@@ -7,16 +7,20 @@ export const theme = () => {
   html.classList.toggle("dark-mode");
   botao.classList.toggle("header__btn--dark-mode");
   localStorage.setItem("@openMusic:", JSON.stringify(darkMode));
+};
 
+window.addEventListener("DOMContentLoaded", () => {
   const storedTheme = localStorage.getItem("@openMusic:");
+  
   if (storedTheme) {
     darkMode = JSON.parse(storedTheme);
   }
+
   if (darkMode) {
     html.classList.add("dark-mode");
     botao.classList.add("header__btn--dark-mode");
   }
-};
+});
 
 botao.addEventListener("click", (event) => {
   event.preventDefault();
